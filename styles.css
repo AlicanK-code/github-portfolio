@@ -10,3 +10,7 @@
     100% {background-position: right;}
     
 }
+
+html {
+    scroll-behavior: smooth;
+}
