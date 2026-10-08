@@ -3,169 +3,383 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css"> 
-    <title>Portfolio</title>
+    <title>Alican Kaplan | Portfolio</title>
+    <meta name="description" content="Alican Kaplan: Computer Science graduate in London building full-stack web apps and evaluating frontier AI agents.">
+    <meta name="theme-color" content="#0b0d12">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b0d12'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='%23f5a35c'>AK</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="my-gradient">
-    
-    <div class="card text-center mb-3 sticky-top bg-dark" data-bs-theme="dark" style="border-radius: 0;">
-        <div class="card-header">
-            <ul class="nav nav-pills card-header-pills">
-                <li class="nav-item">
-                    <a class="nav-link Home text-white fw-bold" aria-current="true" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link About text-white fw-bold" aria-current="true" href="#aboutme">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link Projects text-white fw-bold" aria-disabled="true" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link Contact text-white fw-bold" aria-current="true" href="#contact">Contact</a>
-                </li>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a href="#top" class="brand" aria-label="Alican Kaplan, back to top">
+                <span class="brand-mark">AK</span>
+                <span class="brand-name">Alican Kaplan</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
-        </div>
-    </div>
-    
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        
-        <div class="d-flex flex-column text-center">
-            
+        </nav>
+    </header>
 
-            <h1 class="py-4 text-white fst-italic fw-bold">Hello, I'm Alican.<br>Welcome to my Portfolio</h1>
-            
-            <div> 
-                <a href="#aboutme" class="btn btn-dark fw-bold btn-outline-light fw-bold" style="--bs-btn-font-size: 1.25rem;">Explore</a>
-            </div>
-            
-        </div>
-        
-    </div>
+    <main id="main">
 
-    <section id="aboutme" class="py-5 text-white" style="min-height: 100vh;">
-    <div class="container text-center">
-        <h2 class="display-4 py-5 fst-italic fw-bold" style="margin-bottom: 10rem;">About</h2>
-
-        <div class="row align-items-center">
-
-            <div class="col-12 col-lg-6 text-lg-start mb-5 mb-lg-0">
-                <p class="mb-3 fs-5 text-light mx-auto" style="max-width: 400px;">
-                    I'm a recent <span class="fw-bold">Computer Science graduate</span> from City St'Georges, University of London,
-                    with industrial experience as an <span class="fw-bold">Information Analyst</span>.
-                    I possess strong skills in <span class="fw-bold">Java and MySQL</span>, and am passionate about building new things.
+        <!-- Hero -->
+        <section id="top" class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>London, UK · Open to opportunities</p>
+                <h1>Hi, I'm Alican.<br><span class="gradient-text">I build software and evaluate AI agents.</span></h1>
+                <p class="hero-lede">
+                    Computer Science graduate working on frontier LLM agent evaluation at Fleet AI.
+                    I ship full-stack web apps with React, TypeScript and Node.js, and I have a background in
+                    healthcare data analysis.
                 </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View my work</a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                </div>
+                <ul class="hero-social" aria-label="Profiles">
+                    <li><a href="https://github.com/AlicanK-code" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/alican-kaplan-131208285" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="mailto:alicank996@gmail.com">alicank996@gmail.com</a></li>
+                </ul>
             </div>
+        </section>
 
-            <div class="col-12 col-lg-6">
-                
-                <div class="row">
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div>
+                    <p class="section-label">01 · About</p>
+                    <h2>Engineer by training, evaluator by trade.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>
+                        I graduated from <strong>City St George's, University of London</strong> with a BSc (Hons) in
+                        Computer Science (2:1). Today I'm part of the core team at <strong>Fleet AI</strong>, where I design
+                        benchmark datasets and verifiable rubrics for frontier LLM agents, lead environment QA, and mentor
+                        a team of writers and QAs.
+                    </p>
+                    <p>
+                        Before that I spent a year as a <strong>Business Information Analyst at West London NHS Trust</strong>,
+                        building statutory reports and dashboards in SQL, Power BI and Tableau. Outside of work I build and
+                        ship my own products, with tests, CI and proper releases.
+                    </p>
+                    <dl class="stats">
+                        <div><dt>500</dt><dd>production-ready AI eval tasks co-delivered</dd></div>
+                        <div><dt>100</dt><dd>writers &amp; QAs mentored</dd></div>
+                        <div><dt>124</dt><dd>unit tests on my latest app</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-6 text-center">
-    <h4 class="display-6 fst-italic fw-bold">Learning</h4>
-    <div class="d-flex flex-wrap justify-content-center align-items-center">
-        
-        <img src="images/JavaScript.png" alt="JavaScript logo" style="width: 80px; height: 80px;">
-        
-        <div class="d-flex flex-column align-items-center">
-            <img src="images/HTML.png" alt="HTML logo" style="width: 80px; height: 80px; margin-bottom: 10px;">
-            <img src="images/CSS.png" alt="CSS logo" style="height: 80px;">
-        </div>
-        
-        <img src="images/bootstrap.png" alt="Bootstrap logo" class="mx-2 my-2" style="width: 80px; height: 80px;">
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <p class="section-label">02 · Experience</p>
+                <h2>Where I've worked</h2>
 
-    </div>
-</div>
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Feb 2026 – Present</span>
+                            <span class="place">Remote</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Member of Core Team <span class="at">· Fleet AI, Inc.</span></h3>
+                            <ul>
+                                <li>Designed a large-scale benchmark dataset for evaluating frontier LLM agents on realistic, multi-step workflows.</li>
+                                <li>Built programmatically verifiable rubrics using LLM-as-a-judge and string-match verification, and debugged verifier logic for accurate grading.</li>
+                                <li>Led environment QA across technology (including SRE), healthcare, finance and legal domains, from build to production-ready.</li>
+                                <li>Reviewed hundreds of agent runs to identify strengths, failure modes and reasoning errors; co-led a data science project delivering 500 production-ready tasks.</li>
+                                <li>Managed two mentor groups (100 people) with 1:1 coaching for writers and QAs.</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>LLM evaluation</li><li>Benchmark design</li><li>Rubrics</li><li>RLHF</li><li>Mentoring</li>
+                            </ul>
+                        </div>
+                    </li>
 
-                    <div class="col-6 text-center">
-                        <h4 class="display-6 fst-italic fw-bold">Experienced</h4>
-                        <div class="d-flex flex-wrap justify-content-center align-items-center">
+                    <li class="timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Sep 2023 – Sep 2024</span>
+                            <span class="place">London, UK</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Business Information Analyst <span class="at">· West London NHS Trust</span></h3>
+                            <ul>
+                                <li>Produced statutory reports and engineered service pathways using MSSQL, Power BI, Tableau and Excel.</li>
+                                <li>Automated recurring data tasks with advanced pivot tables and VBA macros, improving accuracy.</li>
+                                <li>Built reports and dashboards from multiple data sources and presented findings to senior leadership.</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>MSSQL</li><li>Power BI</li><li>Tableau</li><li>Excel / VBA</li>
+                            </ul>
+                        </div>
+                    </li>
 
-                            <img src="images/Java.png" alt="Java logo" style="width: 80px; height: 100px; margin-right: 50px;">
-                            <img src="images/MySQL.png" alt="MySQL logo" style="width: 100px; height: 100px;">  
-                            
-                            <img src="images/PowerBI.png" alt="PowerBI logo" style="width: 150px; height: 100px;">
-                            <img src="images/Tableau.png" alt="Tableau logo" style="width: 150px; height: 100px;">
-                            
-                        
-                       </div>    
+                    <li class="timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Jun 2022</span>
+                            <span class="place">Remote</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Virtual Internship <span class="at">· Bright Network</span></h3>
+                            <ul>
+                                <li>Analysed Amazon's delivery strategy for net-zero carbon emissions as part of a virtual insight programme.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <p class="section-label">03 · Projects</p>
+                <h2>Selected work</h2>
+                <p class="section-intro">A mix of shipped products, a final-year dissertation and data visualisation work. Everything is on GitHub.</p>
+
+                <div class="projects">
+
+                    <article class="project project-featured reveal">
+                        <a class="project-media media-daybreak" href="https://daybreak-pearl.vercel.app" target="_blank" rel="noopener" aria-label="Open the Daybreak live demo">
+                            <img src="images/daybreak-today.png" alt="Daybreak's Today view: a level 9 XP bar, a daily progress ring and a list of habits with streaks and XP rewards" loading="lazy">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="badge badge-accent">Featured · 2026</span>
+                                <span class="badge">Live</span>
+                            </div>
+                            <h3>Daybreak</h3>
+                            <p class="project-sub">Gamified habit tracker</p>
+                            <p>
+                                An installable, offline-capable PWA for tracking habits, with XP, levels, streaks,
+                                trophies and a no-account demo mode.
+                            </p>
+                            <ul class="highlights">
+                                <li>A pure game engine derives all progress from completion history, so rules change without data migrations.</li>
+                                <li>Optimistic UI with automatic rollback (TanStack Query) behind a repository interface for Supabase and an offline demo backend.</li>
+                                <li>User data secured with PostgreSQL Row Level Security.</li>
+                                <li>Vitest unit tests and Playwright end-to-end tests run in GitHub Actions on every push, with tagged releases.</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>React</li><li>TypeScript</li><li>Supabase</li><li>TanStack Query</li><li>Tailwind</li><li>Playwright</li><li>Vercel</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-primary btn-sm" href="https://daybreak-pearl.vercel.app" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/AlicanK-code/daybreak" target="_blank" rel="noopener">Source code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <a class="project-media media-email" href="https://github.com/AlicanK-code/email-analyser" target="_blank" rel="noopener" aria-label="View Email-Analyser on GitHub">
+                            <img src="images/email-analyser.png" alt="Email-Analyser results table ranking inbox sender domains by email count" loading="lazy">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="badge">2026</span>
+                                <span class="badge">In development</span>
+                            </div>
+                            <h3>Email-Analyser</h3>
+                            <p class="project-sub">Gmail sender analytics</p>
+                            <p>
+                                A web app that signs users in with Google OAuth2 (read-only scope) and ranks the sender
+                                domains filling their inbox.
+                            </p>
+                            <ul class="highlights">
+                                <li>Sign-in secured with OAuth state validation, server-side sessions and per-request credentials.</li>
+                                <li>Fast scanning by fetching only message headers in parallel batches.</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Node.js</li><li>Express</li><li>OAuth2</li><li>Gmail API</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/AlicanK-code/email-analyser" target="_blank" rel="noopener">Source code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <a class="project-media media-myhealth" href="https://github.com/AlicanK-code/MyHealth-Dissertation" target="_blank" rel="noopener" aria-label="View MyHealth on GitHub">
+                            <img src="images/appointmentSchedulingPageCalenderView.png" alt="MyHealth appointment scheduling screen with a date picker calendar" loading="lazy">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="badge">2025</span>
+                                <span class="badge">Dissertation · 70%</span>
+                            </div>
+                            <h3>MyHealth</h3>
+                            <p class="project-sub">Health appointment management app</p>
+                            <p>
+                                A Java desktop application designed to reduce missed healthcare appointments, with a
+                                JavaFX interface backed by a MySQL database.
+                            </p>
+                            <ul class="highlights">
+                                <li>Designed in Visual Paradigm and delivered with an Agile methodology.</li>
+                                <li>Streamlines the appointment scheduling and management workflow end to end.</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Java</li><li>JavaFX</li><li>MySQL</li><li>JDBC</li><li>Maven</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/AlicanK-code/MyHealth-Dissertation" target="_blank" rel="noopener">Source code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <a class="project-media media-dataviz" href="https://github.com/AlicanK-code/DataVisualisationModule-Project" target="_blank" rel="noopener" aria-label="View the healthcare data visualisation project on GitHub">
+                            <img src="images/healthcareExpenditureGeoComparison.png" alt="Choropleth maps comparing regional healthcare expenditure in England and Wales, 2019-20 and 2021-22" loading="lazy">
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="badge">2024</span>
+                                <span class="badge">Data visualisation</span>
+                            </div>
+                            <h3>UK Healthcare Funding vs. Patient Satisfaction</h3>
+                            <p class="project-sub">A spatial and temporal analysis</p>
+                            <p>
+                                An interactive visualisation of Office for National Statistics data, loaded asynchronously
+                                with the Fetch API.
+                            </p>
+                            <ul class="highlights">
+                                <li>Choropleth maps and interactive bar charts show rising regional healthcare spending alongside declining GP patient satisfaction (2019–2022).</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Elm</li><li>Vega-Lite</li><li>JSON</li><li>ONS Open Data</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/AlicanK-code/DataVisualisationModule-Project" target="_blank" rel="noopener">Source code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <p class="section-label">04 · Skills</p>
+                <h2>Toolkit</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card reveal">
+                        <h3>AI &amp; Evaluation</h3>
+                        <ul class="tags">
+                            <li>LLM agent evaluation</li><li>Benchmark &amp; dataset design</li><li>Rubric design</li>
+                            <li>LLM-as-a-judge</li><li>RLHF</li><li>Multimodal annotation</li><li>Prompt engineering</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Languages</h3>
+                        <ul class="tags">
+                            <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>Java</li><li>C++</li><li>HTML / CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Frameworks &amp; APIs</h3>
+                        <ul class="tags">
+                            <li>React</li><li>Node.js</li><li>Express</li><li>TanStack Query</li><li>Tailwind CSS</li>
+                            <li>JavaFX</li><li>REST APIs</li><li>OAuth2</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Data &amp; Databases</h3>
+                        <ul class="tags">
+                            <li>PostgreSQL (Supabase)</li><li>MySQL</li><li>MSSQL</li><li>Power BI</li><li>Tableau</li><li>Excel / VBA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Testing &amp; Tools</h3>
+                        <ul class="tags">
+                            <li>Vitest</li><li>Playwright</li><li>GitHub Actions</li><li>Git</li><li>Vercel</li><li>Linux</li><li>Maven</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card reveal">
+                        <h3>Education</h3>
+                        <p class="edu"><strong>BSc Computer Science (Hons), 2:1</strong><br>City St George's, University of London · 2021–2025</p>
+                        <p class="edu-modules">Top modules: OO Analysis &amp; Design (83%), C++ (81.4%), Algorithms (77.6%)</p>
                     </div>
                 </div>
             </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-    <section id="projects" class="py-5 text-white">
-        <div class="container text-center">
-            <h3 class="display-4 py-5 fst-italic fw-bold" style="margin-bottom: 10rem;">Projects</h3>
-                <div class="container text-start clearfix">
-                    <figure class="figure float-end ms-4 mb-4" style="max-width: 45%;">
-                                            <img src="images/appointmentSchedulingPageCalenderView.png" class="rounded float-end d-block mx-auto w-100" alt="MyHealth App Appointments Page">
-
-                                            <figcaption class="figure-caption text-center text-white">
-                                            MyHealth Appointment Scheduling Calender View
-                                            <a href="https://github.com/AlicanK-code/MyHealth-Dissertation" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white fw-bold" target="_blank"><br>To Find Out More</a>
-                                            </figcaption>
-                                        </figure>
-                    <h4 class="display-3 fst-italic fw-bold">MyHealth</h4>
-                        <p class="lead">A Java-based desktop application created to streamline the health appointment management process.<br> Designed with Visual Paradigm featuring a responsive JavaFX and CSS UI, leveraging <br>JDBC API for integration with a MySQL database.</p>
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <div class="container contact-inner reveal">
+                <p class="section-label">05 · Contact</p>
+                <h2>Let's work together.</h2>
+                <p class="section-intro">I'm open to roles in software engineering and AI evaluation. The quickest way to reach me is by email.</p>
+                <div class="hero-actions center">
+                    <a href="mailto:alicank996@gmail.com" class="btn btn-primary">Email me</a>
+                    <a href="https://linkedin.com/in/alican-kaplan-131208285" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/AlicanK-code" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
                 </div>
+            </div>
+        </section>
 
-                <hr>
+    </main>
 
-                <div class="container text-start mt-5">
-                <div class="container text-start clearfix">
-
-                <figure class="figure float-end ms-4 mb-4" style="max-width: 45%;">
-                                            <img src="images/healthcareExpenditureGeoComparison.png" class="rounded float-end d-block mx-auto w-100" alt="2019-2020 - 2021-22 Regional Healthcare Expenditure Comparison" style="max-width: 300px;">
-
-                                            <figcaption class="figure-caption text-center text-white">            
-                                            Regional Healthcare Expenditure Comparison
-                                            <a href="https://github.com/AlicanK-code/DataVisualisationModule-Project" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white fw-bold" target="_blank"><br>To Find Out More</a>
-                                            </figcaption>
-                                        </figure>
-
-            <h4 class="display-3 fst-italic fw-bold">UK Healthcare Funding vs Patient Satisfaction:</h4>
-            <h5 class="display-6 fst-italic">A Spatial and Temporal Analysis</h5>
-
-            <p class="lead"> A vega-lite and Elm visualisation created to portray data from the ONS.<br>Exploring the correlation between regional UK healthcare expenditure <br>and corresponding GP patient satisfaction trends.</p>
-
-    </div>
-</div>
-    
-
-    </div>
-</section>
-
-<section id="contact" class="py-5 text-white text-center" style="min-height: 100vh;">
-    <div class="container">
-        <h3 class="display-4 py-5 fst-italic fw-bold">Get In Touch</h3>
-        
-        <p class="lead mb-5">
-            I'm open to discussing new opportunities. Feel free to contact me below!
-        </p>
-
-        <div class="d-flex justify-content-center flex-wrap gap-3">
-            
-            <a href="mailto:alicank996@gmail.com" class="btn btn-dark fw-bold btn-outline-light fw-bold" target="_blank">
-                Email Me
-            </a>
-            
-            <a href="https://linkedin.com/in/alican-kaplan-131208285" class="btn btn-dark fw-bold btn-outline-light fw-bold" target="_blank">
-                LinkedIn
-            </a>
-
-            <a href="https://github.com/AlicanK-code" class="btn btn-dark fw-bold btn-outline-light fw-bold" target="_blank">
-                GitHub
-            </a>
-
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year">2026</span> Alican Kaplan · London, UK</p>
+            <a href="#top">Back to top ↑</a>
         </div>
-        
-    </div>
-</section>
-    
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Fade sections in as they scroll into view
+        const revealEls = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            revealEls.forEach((el) => io.observe(el));
+        } else {
+            revealEls.forEach((el) => el.classList.add('is-visible'));
+        }
+
+        // Highlight the nav link for the section in view
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = [...navLinks].map((a) => document.querySelector(a.getAttribute('href')));
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        sections.forEach((s) => s && spy.observe(s));
+
+        // Add a border to the header once the page is scrolled
+        const header = document.querySelector('.site-header');
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    </script>
 </body>
 </html>
-
