@@ -151,7 +151,7 @@
             <div class="container">
                 <p class="section-label">03 · Projects</p>
                 <h2>Selected work</h2>
-                <p class="section-intro">A mix of shipped products, a final-year dissertation and data visualisation work. Everything is on GitHub.</p>
+                <p class="section-intro">A mix of shipped products, AI evaluation tooling, a final-year dissertation and data visualisation work. Everything is on GitHub.</p>
 
                 <div class="projects">
 
@@ -182,6 +182,48 @@
                             <div class="project-links">
                                 <a class="btn btn-primary btn-sm" href="https://daybreak-pearl.vercel.app" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
                                 <a class="btn btn-ghost btn-sm" href="https://github.com/AlicanK-code/daybreak" target="_blank" rel="noopener">Source code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <a class="project-media media-evals" href="eval-harness.html" aria-label="Read how the AI evaluation harness works">
+                            <div class="evals-chart" aria-hidden="true">
+                                <p class="evals-title">Score by difficulty</p>
+                                <div class="evals-legend"><span class="ev-h">Haiku 5.5</span><span class="ev-s">Sonnet 5.5</span><span class="ev-o">Opus 5.5</span></div>
+                                <div class="evals-plot">
+                                    <div class="evals-group"><i class="ev-h" style="--v:97.6%"></i><i class="ev-s" style="--v:100%"></i><i class="ev-o" style="--v:100%"></i></div>
+                                    <div class="evals-group"><i class="ev-h" style="--v:95.1%"></i><i class="ev-s" style="--v:100%"></i><i class="ev-o" style="--v:97.1%"></i></div>
+                                    <div class="evals-group"><i class="ev-h" style="--v:90%"></i><i class="ev-s" style="--v:92%"></i><i class="ev-o" style="--v:97.2%"></i></div>
+                                    <div class="evals-group"><i class="ev-h" style="--v:40%"></i><i class="ev-s" style="--v:46.7%"></i><i class="ev-o" style="--v:55.6%"></i></div>
+                                </div>
+                                <div class="evals-labels"><span>Easy</span><span>Medium</span><span>Hard</span><span>Frontier</span></div>
+                            </div>
+                        </a>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="badge">2026</span>
+                                <span class="badge">Tested on Claude</span>
+                            </div>
+                            <h3>AI Evaluation Harness</h3>
+                            <p class="project-sub">Measuring whether a model really got better</p>
+                            <p>
+                                A Python tool that runs AI models on test questions, grades their answers and reports whether
+                                a difference between two models is real or just noise. I used it to compare three Claude
+                                models on 110 science and research questions.
+                            </p>
+                            <ul class="highlights">
+                                <li>Scores come with 95% confidence ranges and paired comparisons, so a 3-point gap isn't mistaken for a win.</li>
+                                <li>Keeps API failures, cut-off answers and refusals out of the score. Opus refused four PhD-level biology questions, enough to flip its ranking.</li>
+                                <li>Caught two faulty answer keys in public benchmarks by flagging questions every model "failed" on every try.</li>
+                                <li>53 tests and an offline mock model run in GitHub Actions, so the whole pipeline is checked without an API key.</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Python</li><li>Claude API</li><li>Hugging Face</li><li>Statistics</li><li>pytest</li><li>GitHub Actions</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn btn-primary btn-sm" href="eval-harness.html">How it works <span aria-hidden="true">→</span></a>
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/AlicanK-code/ai-eval-harness" target="_blank" rel="noopener">Source code</a>
                             </div>
                         </div>
                     </article>
